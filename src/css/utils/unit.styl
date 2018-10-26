@@ -1,0 +1,12 @@
+$default-ps-width = 750px;
+$screen-width = 375px
+
+/**
+ * 将px单位的数值转换为rpx单位的数值
+ * 在IPhone6上 1px = 2rpx
+ * $size: 大小
+ * $base：PS的长度
+ */
+
+px2rpx($size, $base = $default-ps-width)
+  return 0rpx + $size / $default-ps-width * $screen-width * 2
